@@ -27,7 +27,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(47, 82, 100, 0.5);
+    background-color: rgb(47, 82, 100, 0.7);
     margin-top: 20px;
     color: rgb(229, 232, 235);
     font-size: 2rem;
@@ -51,4 +51,99 @@ p{
     color: rgb(245, 239, 230, 0.8);
     font-family: Helvetica, sans-serif;
     font-size: 0.7rem;
+}
+
+/*******FORM STYLES******/
+#form-container{
+    flex: 2 1 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: azure;
+    gap: 10px 0;
+    color: rgb(34, 35, 37);
+}
+
+#form-container > p, #input-fields{
+    padding: 2px 50px;
+}
+
+#input-fields{
+    color: rgb(64, 65, 67);
+    width: inherit;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    box-shadow: rgb(150, 149, 149) 0 2px 5px;
+
+}
+
+#form-container button{
+    margin: 20px 50px;
+    background-color: rgb(76, 103, 94);
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 30px;
+    box-shadow: rgba(80, 156, 156, 0.7) 2px 2px 2px;
+    cursor: pointer;
+}
+
+#form-container button:hover{
+    color: rgb(76, 103, 94);
+    background-color: white;
+    border: rgb(76, 103, 94) solid 2px;
+}
+
+#form-container p{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.pair{
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 50px;
+}
+
+.pair div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label{
+    font-size: 0.7rem;
+}
+
+input{
+    border: rgb(208, 208, 208) solid 1px;
+    border-radius: 1px;
+}
+
+input:focus-visible{
+    outline: rgb(18, 92, 252, 0.5) auto 1px;
+    box-shadow: lightgrey 2px 2px 2px;
+}
+
+input:invalid{
+    border: rgb(255, 68, 68, 0.5) solid 1px;
+    border-radius: 2px;
+}
+
+#form-container p:last-of-type{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+#form-container a:last-of-type{
+    color: rgb(59, 59, 59);
+    font-size: 0.8rem;
 }
